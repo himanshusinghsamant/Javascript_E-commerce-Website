@@ -1,0 +1,792 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(120, 124, 124);
+  box-shadow: 0px 5px 5px #6c6969;
+  height: 15vh;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* position: relative; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  font-size: larger;
+}
+.logo img {
+  width: 12%;
+}
+.logo h1 {
+  color: rgb(4, 56, 18);
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-shadow: 10px 10px rgb(173, 176, 173);
+}
+.logo h3 {
+  color: rgb(11, 54, 23);
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  width: 30%;
+}
+#mobile {
+  display: none;
+  width: 10%;
+  color: #fff8f8;
+}
+
+ #close{ 
+    display: none;
+}
+#navbar li {
+  padding: 0px 20px;
+}
+
+#navbar li a {
+  color: rgb(196, 194, 196);
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#navbar li :hover,
+#navbar li .active {
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+/* .nav-items ul li a .active ::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    bottom: -4px;
+    left: 20px;
+    position: absolute;
+
+} */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#bg1 {
+  width: 70%;
+  height: 97vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+#bg2 {
+  width: 30%;
+  height: 97vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  box-shadow: -5px 0px 5px #827c7c;
+}
+
+#button {
+  position: absolute;
+  left: 84%;
+  top: 61%;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 6px rgb(162, 150, 150);
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(141, 10, 10);
+  cursor: pointer;
+}
+
+#features {
+  padding: 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#fe-box {
+  width: 100px;
+  text-align: center;
+  padding: 25px 15px;
+  border: 0.5px solid grey;
+  box-shadow: 15px 10px 10px rgb(190, 188, 188);
+  border-radius: 4px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+#fe-box:nth-child(2) h6 {
+  background-color: rgb(221, 230, 230);
+}
+#fe-box:nth-child(3) h6 {
+  background-color: rgb(144, 241, 199);
+}
+
+#fe-box:nth-child(4) h6 {
+  background-color: rgb(238, 211, 243);
+}
+#fe-box:nth-child(5) h6 {
+  background-color: rgb(223, 235, 187);
+}
+#fe-box:nth-child(6) h6 {
+  background-color: rgb(217, 215, 217);
+}
+
+#fe-box:hover {
+  box-shadow: 10px 10px 10px rgb(155, 154, 154);
+}
+#fe-box img {
+  width: 80%;
+}
+#fe-box h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* padding: 5px 5px; */
+  height: 20px;
+  width: 80%;
+  margin-left: 10px;
+  border-radius: 6px;
+  /* border: 1px solid rgb(227, 145, 145); */
+  background-color: rgb(255, 219, 225);
+}
+
+#products {
+  text-align: center;
+  margin: 30px;
+}
+#products h1 {
+  font-size: 2.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(108, 108, 108);
+  padding: 10px;
+}
+#products p {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(178, 195, 195);
+}
+
+#title {
+  text-align: start;
+  font-size: 2rem;
+  font-style: italic;
+  color: black;
+  margin-top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items {
+  width: 10%;
+  min-width: 90px;
+  height: 303px;
+  background-color: #e3e1e1;
+  padding: 10px 25px;
+  border: 1px solid rgb(180, 178, 178);
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px gray;
+  cursor: pointer;
+  position: relative;
+}
+.items:hover {
+  box-shadow: 10px 10px 15px rgb(134, 133, 133);
+}
+.items img {
+  width: 100%;
+  height: 174p;
+  border-radius: 15px;
+}
+.des {
+  text-align: start;
+  padding: 10px 0;
+  position: absolute;
+  top: 200px;
+  left: 15px;
+}
+.edit{
+    position: absolute;
+    top:320px ;
+}
+
+.des span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.des h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.stars {
+  color: rgb(228, 228, 8);
+  margin-top: 5px;
+}
+.des h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(168, 11, 11);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#shop-icon {
+  position: absolute;
+  left: 90%;
+  top: 85%;
+}
+
+hr {
+  color: #fff8f8;
+}
+
+.container_3 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  /* object-fit: cover; */
+}
+.container_3::before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://graphicsfamily.com/wp-content/uploads/edd/2021/07/Professional-E-Commerce-Shoes-Banner-Design.jpg ");
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.info {
+  width: 100%;
+  text-align: center;
+  top: 50px;
+  position: relative;
+}
+.info h1 {
+  z-index: 2;
+  position: relative;
+  color: rgb(159, 58, 58);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+}
+
+.info h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-style: italic;
+}
+.info h3 {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.sh_items {
+  width: 20%;
+  min-width: 150px;
+  height: 450px;
+}
+.container_4 {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.poster_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  width: 44%;
+  height: 300px;
+  background-image: url("https://thumbs.dreamstime.com/b/fashion-pretty-cool-young-girl-shopping-bags-wearing-black-hat-white-pants-over-colorful-orange-background-79063329.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.poster_2 {
+  background-image: url("https://www.jdinstitute.edu.in/media/2021/07/Types-of-Fashion-Photography-Thumbnail.jpg");
+}
+.poster_1 h1 {
+  padding: 5px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.poster_1 h4 {
+  color: #6c6969;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.poster_1 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff8f8;
+}
+.poster_1 button {
+  margin-top: 5px;
+  background-color: transparent;
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.poster_1 button:hover {
+  color: white;
+  opacity: 1;
+  background-color: green;
+  transition: 0.3;
+  box-shadow: 5px 5px 18px 10px rgb(245, 221, 115);
+}
+
+.container_5 {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.pos {
+  width: 32%;
+  height: 30vh;
+  background-image: url("https://bsmedia.business-standard.com/_media/bs/img/article/2017-06/05/full/1496681776-4413.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: covers;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pos_box_1 {
+  background-image: url("https://www.shutterstock.com/image-photo/full-length-stylish-multicultural-women-260nw-1855048690.jpg");
+}
+.pos_box_2 {
+  background-image: url("https://i.ebayimg.com/images/g/PssAAOxyM1VRYOeh/s-l500.jpg");
+}
+
+.pos h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(173, 199, 254);
+}
+.pos h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(176, 202, 202);
+}
+
+#news-letter {
+  margin-top: 90px;
+  height: 150px;
+  background-color: #080631;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  padding-left: 50px;
+}
+.content h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 10px;
+}
+.content h5 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #a19c9c;
+}
+
+.search {
+  padding-right: 50px;
+}
+#input {
+  padding: 10px;
+  padding-right: 150px;
+}
+#btn {
+  padding: 11px 10px;
+  margin-left: -4px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.detail {
+  height: 70vh;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  height: 315px;
+}
+.box_1 h3 {
+  font-weight: lighter;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#use-link {
+  font-weight: lighter;
+  padding-top: 15px;
+}
+.box_2 h3 {
+  font-weight: lighter;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.box_3 h3 {
+  font-weight: lighter;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.box_1 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #6c6969;
+}
+.box_2 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #6c6969;
+}
+.box_3 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #6c6969;
+}
+#kit {
+  padding-top: 40px;
+}
+
+.box_1 {
+  /* padding: 0 60px; */
+  width: 40%;
+}
+.box_2 {
+  /* padding: 0 60px; */
+  width: 50%;
+}
+.box_3 {
+  width: 40%;
+  /* padding: 0 60px;s */
+}
+.box_4 {
+  width: 40%;
+}
+.icons-1 {
+  display: flex;
+  align-items: center;
+}
+#google-icon {
+  width: 45%;
+  cursor: pointer;
+  padding-right: 5px;
+}
+#apple-store {
+  width: 50%;
+  cursor: pointer;
+}
+.tag img {
+  width: 15%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.tag2 img {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 15%;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.tag2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.fav-icons i {
+  padding: 10px 5px;
+  opacity: 0.3;
+}
+
+.searches {
+  padding: 20px 50px;
+}
+
+.searches h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.searches p {
+  padding-left: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #6c6969;
+}
+
+/* ---------> styling for responsiveness ---------------------> */
+
+@media (max-width: 414px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 40px;
+    top: 0;
+    /* right: 0px;   */
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    background-color: #080631;
+    z-index: 1;
+    transition: 0.4s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    padding-top: 10px;
+  }
+
+  #mobile {
+    width: 10%;
+    color: #fff8f8;
+    display: flex;
+    position: relative;
+  }
+  #bar {
+    margin-right: 20px;
+    position: absolute;
+    right: 20px;
+  }
+  #mobile a {
+    color: #e3e1e1;
+    margin-right: 10px;
+    position: absolute;
+    right: 55px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: white;
+  }
+
+  #bg1 {
+    width: 100%;
+    height: 350px;
+  }
+  #bg2 {
+    display: none;
+  }
+  #button {
+    position: absolute;
+    left: 100px;
+  }
+#fe-box{
+    width: 34%;
+}
+#fe-box h6{
+    width: 100%;
+    margin-left: 0px;
+}
+
+.container-2{
+  justify-content: center;
+}
+.items{
+  height: 250px;
+  margin: 20px auto;
+}
+.des{
+  position: absolute;
+  top: 135px;
+}
+.edit{
+  position: absolute;
+  top: 250px;
+}
+
+#banner{
+    height: 300px;
+}
+.info h1{
+    font-size: 2rem;
+} 
+
+  .sh_items {
+    height: 370px;
+    margin-left: 57px;
+    width: 55%;
+  }
+
+  .container_4{
+    display: flex;
+    flex-direction: column;
+  }
+.poster_1{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.container_5{
+    padding: 10px 0px;
+}
+.pos{
+    width: 29%;
+    text-align: center;
+    background-size: cover;
+}
+.pos h1{
+    font-size: 1rem;
+}
+.pos h5{
+    padding-right: 20px;
+}
+
+
+#news-letter{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    padding:30px 0px 25px 25px;
+}
+.search{
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#input{
+    padding-right: 70px;
+}
+
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+}
+
+
+.box_1 h3{
+    font-size: 0.9rem;
+}
+.box_1 p{
+    font-size: 0.6rem;
+}
+.box_2 h3{
+    font-size: 0.9rem;
+}
+.box_2 p{
+    font-size: 0.6rem;
+
+}
+
+.box_3 h3{
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+.tag p{
+    font-size: 0.7rem;
+}
+.tag img{
+    width: 57%;
+}
+.tag2 img{
+    width: 57%;
+}
+.tag2 p{
+    font-size: 0.7rem;
+}
+.searches{
+    height: 200px;
+}
+.searches h3{
+    font-size: 00.9rem;
+}
+.searches p{
+    font-size: 00.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

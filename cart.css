@@ -1,0 +1,160 @@
+#cart{
+    padding: 30px 40px;
+    margin-top: 60px;
+    overflow-x: auto;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table thead{
+    border: 1px solid rgb(205, 200, 200);
+    border-left: none;
+    border-right: none;
+}
+#cart table thead tr td{
+    padding: 18px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cart table tbody tr td{
+    padding-top: 20px;
+}
+#cart table tbody tr td i{
+    cursor: pointer;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 5px 5px;
+}
+
+#cart table tbody tr td img{
+    width: 70px;
+
+}
+
+#cart table tbody tr td{
+    margin-top: 30px;
+}
+
+
+
+
+#cart-add{
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(232, 229, 229);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#input-sec h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#input-sec{
+    width: 45%;
+}
+#coupon-container{
+    height: 60px;
+}
+#input-sec div{
+    margin-top: 20px;
+}
+#input-sec input{
+    width: 60%;
+    padding: 10px 20px;
+    outline: none;
+    margin-right: 10px;
+    border: 1px solid rgb(212, 212, 212);
+}
+#input-sec button{
+    padding: 10px 20px;
+    background-color: red;
+    font-weight: 700;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+}
+#input-sec button:hover{
+    background-color: rgb(249, 231, 231);
+    color: black;
+    border: 1px solid rgb(246, 120, 120);
+}
+
+#cart-tot{
+    width: 45%;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 30px;
+}
+#cart-tot table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+#cart-tot h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#cart-tot table td{
+    width: 50%;
+    border: 1px solid rgb(213, 212, 212);
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cart-tot button{
+    padding: 10px 20px;
+    background-color: red;
+    font-weight: 700;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+}
+#cart-tot button:hover{
+    background-color: rgb(249, 231, 231);
+    color: black;
+    border: 1px solid rgb(246, 120, 120);
+}
+
+
+/* ------------- responsive styling ---------------> */
+
+@media (max-width:414px) {
+    #input-sec{
+        width: 100%;
+    }
+    #cart-tot{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

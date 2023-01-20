@@ -1,0 +1,124 @@
+#prodetails{
+    padding: 40px 80px;
+    display: flex;
+    height: 480px;
+}
+#prodetails .single-pro-image{
+    width: 27%;
+    margin-right: 36px;
+
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    cursor: pointer;
+    /* flex-basis: 24%; */
+}
+.small-img-group .small-img-col{
+    padding: 0px 5px;
+}
+.single-pro-details{
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 50%;
+}
+.single-pro-details h3{
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.single-pro-details h6{
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+.single-pro-details h2{
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.single-pro-details select{
+    display: block;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 10px;
+    font-weight: 700;
+
+}
+#button-bt{
+    margin-top: 20px;
+}
+#button-bt button{
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    background-color: red;
+    cursor: pointer;
+}
+#button-bt button:hover{
+    box-shadow: 5px 5px 10px red;
+    
+}
+
+
+#button-bt input{
+    width: 10%;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.cont{
+    display: flex;
+}
+
+.single-pro-details h4{
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.single-pro-details span{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+/* ----------------- responsive styling --------------------> */
+
+
+
+@media (max-width:414px) {
+
+    #prodetails {
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      #prodetails .single-pro-image {
+        width: 100%;
+        padding-top: 20px;
+      }
+    
+      .single-pro-details {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+      }
+}
+
+
+
+
+
+
+

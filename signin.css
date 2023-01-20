@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container::before{
+    content: '';
+    width: 100%;
+    height: 100vh;
+    background-image: url('project/Images/bj-img2.webp');
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    opacity: 0.35;
+    position: relative;
+    
+}
+#home{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    
+}
+#home a{
+   text-decoration: none;
+   color: rgb(157, 155, 155);
+   font-style: italic;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   transition: 0.4s ;
+}
+#home a:hover{
+    color: rgb(4, 4, 57) ;
+}
+#box{
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background-color: rgb(4, 4, 57);
+    background: linear-gradient(to top, rgb(4, 4, 57), rgb(66, 4, 4));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    /* opacity: 0.50; */
+    
+}
+#title{
+    margin-top: 20px;
+
+}
+#name{
+    max-height: 55px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: black;
+    transition:max-height 0.4s;
+    overflow: hidden;
+   
+}
+#email{
+    max-height: 55px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: black;
+}
+#phone-no{
+    max-height: 55px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: black;
+    transition:max-height 0.4s;
+    overflow: hidden;
+}
+#password{
+    max-height:55px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: black;
+}
+#c-password{
+    max-height:55px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: black;
+}
+#name:hover,#email:hover,#phone-no:hover,#password:hover{
+    box-shadow: 5px 5px 5px 5px rgb(42, 30, 122);
+    transition: 0.5s;
+}
+input{
+    padding: 10px 30px;
+    margin-left: 10px;
+    border: 0;
+    background: transparent;
+    outline: 0;
+  
+}
+.buttons{
+    margin-top: 40px;
+    cursor: pointer;
+}
+#forget-pass{
+    margin-top: 10px;
+}
+.buttons button{
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 1rem;
+   
+}
+.buttons button:hover{
+    box-shadow: 5px 5px 5px 5px rgb(42, 30, 122);
+    transition: 0.5s;
+}
+#signup{
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+
+@media (max-width:414px) {
+    #box{
+        width: 90%;
+        left: 5%;
+    }
+}
+@media (width:896px) {
+    #box{
+        width: 45%;
+        left: 30%;
+    }
+    .container::before{
+        height: 100%;
+    }
+   
+}
