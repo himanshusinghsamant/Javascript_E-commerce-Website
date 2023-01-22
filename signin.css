@@ -112,6 +112,7 @@
     margin-top: 10px;
     border-radius: 10px;
     color: black;
+    overflow: hidden;
 }
 #name:hover,#email:hover,#phone-no:hover,#password:hover{
     box-shadow: 5px 5px 5px 5px rgb(42, 30, 122);
