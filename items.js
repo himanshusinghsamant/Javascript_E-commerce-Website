@@ -46,7 +46,7 @@ function set_items() {
           window.location.href=('Sproduct.html')
           let image = e.target.src
           let tag = e.target.span
-          console.log(tag)
+          // console.log(tag)
           localStorage.setItem('image',image)
           });
     }

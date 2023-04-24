@@ -3,6 +3,7 @@ let main_image = document.getElementById("main-img");
 // ---------> function for get the items from the shop component --------------------->
 function get_items() {
   let GetI = localStorage.getItem("image");
+  // console.log(GetI)
   main_image.src = GetI;
 }
 get_items();
@@ -55,6 +56,7 @@ decrement();
 
 function add_size() {
   let size = document.querySelectorAll(".size-option");
+  console.log(size)
   for (let i = 0; i <= size.length; i++) {
     size[i].addEventListener("click", (e) => {
       let tar_size = e.target.innerHTML;
@@ -67,7 +69,6 @@ function add_size() {
 
 function add_to_cart() {
   const add_cart_btn = document.getElementById("add-cart-btn");
-  console.log(add_cart_btn)
   add_cart_btn.addEventListener("click", () => {
     let main_image = document.getElementById("main-img").src;
     let product_name = document.getElementById("pro-name").innerHTML;
@@ -90,8 +91,9 @@ function add_to_cart() {
     }
     console.log(productItemsArr)
   });
-
+  add_size();
+  
 }
 add_to_cart();
 
-add_size();
+ 

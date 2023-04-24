@@ -37,6 +37,7 @@
     width: 70%;
     height: auto;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .ab-detail div{
