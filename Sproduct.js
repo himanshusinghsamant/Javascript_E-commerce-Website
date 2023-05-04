@@ -35,14 +35,15 @@ function decrement() {
   const plus = document.getElementById("btn-2");
 
   minus.addEventListener("click", () => {
-    let value = document.getElementById("value");
+    let value = document.getElementById("value")
     let val = (value = value.innerHTML--);
+    console.log(val)
     Rupees.innerHTML = parseFloat(Rupees.innerHTML) / 2;
     if (value <= 2) {
       Rupees.innerHTML = 450;
     }
     if (value <= 1) {
-      value = 0;
+      value = 0
     }
     if (value === 5) {
       plus.style.backgroundColor = " aquamarine";
@@ -56,7 +57,7 @@ decrement();
 
 function add_size() {
   let size = document.querySelectorAll(".size-option");
-  console.log(size)
+  // console.log(size)
   for (let i = 0; i <= size.length; i++) {
     size[i].addEventListener("click", (e) => {
       let tar_size = e.target.innerHTML;
