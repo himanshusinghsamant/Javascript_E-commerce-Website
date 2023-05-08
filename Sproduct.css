@@ -62,6 +62,7 @@
     font-weight: 900;
     background-color: red;
     cursor: pointer;
+    border: none;
 }
 #button-bt button:hover{
     box-shadow: 5px 5px 10px red;

@@ -85,6 +85,7 @@
     border-radius: 5px;
     background-color: red;
     padding: 10px 15px;
+    border: none;
     /* border: 2px solid red; */
 }
 

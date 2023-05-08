@@ -16,7 +16,7 @@ function get_element() {
     //  console.log(element,index)
     carthtml += ` <tr>
     <td id="${index}" onclick = "delete_item(this.id)"><i class="fa-solid fa-trash-can"></i></td>
-    <td> ${element[0]}</td>
+    <td><img src = ' ${element[0]}'/></td>
     <td id="pro-title">${element[1]}</td>
     <td id="pro-size">${target_size}</td>
     <td id="pro-price">${element[2]}</td>

@@ -77,6 +77,7 @@ function add_to_cart() {
   const add_cart_btn = document.getElementById("add-cart-btn");
   add_cart_btn.addEventListener("click", () => {
     let main_image = document.getElementById("main-img").src;
+    // console.log(main_image)
     let product_name = document.getElementById("pro-name").innerHTML;
     const Rupees = document.getElementById("rupees").innerHTML;
     let value = document.getElementById("value").innerHTML;
@@ -92,8 +93,8 @@ function add_to_cart() {
       productItemsArr.push([main_image, product_name, Rupees, value]);
       localStorage.setItem("itemJson", JSON.stringify(productItemsArr));
     }
-    console.log(productItemsArr);
+    // console.log(productItemsArr);
+    add_size();
   });
-  add_size();
 }
 add_to_cart();
